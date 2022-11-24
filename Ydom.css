@@ -1,0 +1,546 @@
+html,body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color:dimgray;
+}
+
+* {
+    font-size: 22px;
+    font-family: cursive;
+    color: white;
+}
+
+.com_div {
+    margin: 1.4rem 0;
+    border-radius: .4rem;
+    padding: .6rem .8rem;
+    max-width: 30rem;
+    min-height: 1.8rem;
+    overflow: auto;
+}
+
+code {
+    display: block;
+    box-sizing: border-box;
+    margin: 1.4rem 0;
+    border-radius: .4rem;
+    padding: .6rem .8rem;
+    max-width: 50rem;
+    min-height: 1.8rem;
+    overflow: auto;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    white-space: normal;
+    background-color: #cf9236;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18.72px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 13.28px;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.red_font {
+    font-size: 22px;
+    font-family: cursive;
+    color: red;
+}
+
+
+
+.grey_font {
+    font-size: 22px;
+    font-family: cursive;
+    color: grey;
+}
+
+.dark_font {
+    font-size: 22px;
+    font-family: cursive;
+    color: darkslategray;
+}
+
+.yello_font {
+    font-size: 22px;
+    font-family: cursive;
+    color: yellow;
+}
+
+.green_font {
+    font-size: 22px;
+    font-family: cursive;
+    color: green;
+}
+
+.blue_font {
+    font-size: 22px;
+    font-family: cursive;
+    color: blue;
+}
+
+.purple_font {
+    font-size: 22px;
+    font-family: cursive;
+    color: purple;
+}
+
+.black_font {
+    font-size: 22px;
+    font-family: cursive;
+    color: black;
+}
+
+.cadetblue_font {
+    font-size: 22px;
+    font-family: cursive;
+    color: cadetblue;
+}
+
+.pink_font {
+    font-size: 22px;
+    font-family: cursive;
+    color: pink;
+}
+
+.burlywood_font {
+    font-size: 22px;
+    font-family: cursive;
+    color: burlywood;
+}
+
+.darkorange_font {
+    font-size: 22px;
+    font-family: cursive;
+    color:darkorange;
+}
+
+.coral_font {
+    font-size: 22px;
+    font-family: cursive;
+    color:coral;
+}
+
+.darkgoldenrod_font {
+    font-size: 22px;
+    font-family: cursive;
+    color:darkgoldenrod;
+}
+
+.darkcyan_font {
+    font-size: 22px;
+    font-family: cursive;
+    color:darkcyan;
+}
+
+.crimson_font {
+    font-size: 22px;
+    font-family: cursive;
+    color:crimson;
+}
+
+.cornflowerblue_font {
+    font-size: 22px;
+    font-family: cursive;
+    color: cornflowerblue;
+}
+
+.father_auto_x_center {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.father_auto_x_center_column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.father_auto_y_center {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.father_auto_y_center_column {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.father_auto_xy_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.father_auto_xy_center_column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.child_1 {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.child_2 {
+    text-align: center;
+    flex-grow: 2;
+}
+
+.child_3 {
+    text-align: center;
+    flex-grow: 3;
+}
+
+.child_4 {
+    text-align: center;
+    flex-grow: 4;
+}
+
+.child_5 {
+    text-align: center;
+    flex-grow: 5;
+}
+
+.child_6 {
+    text-align: center;
+    flex-grow: 6;
+}
+
+.child_7 {
+    text-align: center;
+    flex-grow: 7;
+}
+
+.child_8 {
+    text-align: center;
+    flex-grow: 8;
+}
+
+.child_9 {
+    text-align: center;
+    flex-grow: 9;
+}
+
+.child_10 {
+    text-align: center;
+    flex-grow: 10;
+}
+
+.child_11 {
+    text-align: center;
+    flex-grow: 11;
+}
+
+.child_12 {
+    text-align: center;
+    flex-grow: 12;
+}
+
+input[type="text"] {
+    width: 450px;
+    height: 45px;
+    line-height: 30px;
+    font-size: 30px;
+    padding-left: 30px;
+    border-radius: 50px;
+    background-color: gainsboro;
+    border: none;
+    color: black;
+}
+input[type="text"]:focus{
+    outline: none;
+    background-color:cornflowerblue;
+}
+
+input[type="button"] {
+    width: auto;
+    height: 50px;
+    line-height: 30px;
+    font-size: 30px;
+    color: black;
+    border-radius: 12px;
+    background-color: #a4da89;
+    border: none;
+    text-align: center;
+}
+
+input[type="button"]:hover {
+    background-color:crimson;
+    transition: all 0.5s;
+}
+
+button {
+    background-color: #a4da89;
+    min-width: 81px;
+    width: auto;
+    height: 50px;
+    line-height: 30px;
+    font-size: 30px;
+    color: black;
+    border-radius: 12px;
+    border: none;
+    text-align: center;
+}
+
+button:hover {
+    background-color:crimson;
+    transition: all 0.5s;
+}
+
+.wrap {
+    width: 800px;
+    height: 400px;
+    position: relative;
+}
+
+.list {
+    width: 800px;
+    height: 400px;
+    position: relative;
+    padding-left: 0px;
+}
+
+.item {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: all .8s;
+}
+
+.item:nth-child(1) {
+    background-color: skyblue;
+}
+
+.item:nth-child(2) {
+    background-color: yellowgreen;
+}
+
+.item:nth-child(3) {
+    background-color: rebeccapurple;
+}
+
+.item:nth-child(4) {
+    background-color: pink;
+}
+
+.item:nth-child(5) {
+    background-color: orange;
+}
+
+.item.active {
+    z-index: 10;
+    opacity: 1;
+}
+
+.btn {
+    width: 60px;
+    height: 100px;
+    z-index: 100;
+    top: 150px;
+    position: absolute;
+}
+
+#leftBtn {
+    left: 0px;
+}
+
+#rightBtn {
+    right: 0px;
+}
+
+.pointList {
+    list-style: none;
+    padding-left: 0px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    z-index: 200;
+}
+
+.point {
+    width: 10px;
+    height: 10px;
+    background-color: antiquewhite;
+    border-radius: 100%;
+    float: left;
+    margin-right: 8px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: slategray;
+    cursor: pointer;  
+}
+
+.point.active{
+    background-color: cadetblue;
+}
+
+/* Roll Box */
+
+@keyframes move_2 {
+    from{left: 0;transform: rotate(0deg)}
+    to{left: 95%;transform: rotate(360deg)}
+}
+
+.bottomBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 5.4rem;
+    top: 100%;
+    position: sticky;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-width: 4px;
+    border-color: red;
+    border-style: double;
+    border-radius: 2rem 2rem;
+    background-color: #cf9236;
+    animation: move_2 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.b1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 75%;
+    height: 75%;
+    border-color: red;
+    border-style: double;
+    border-radius: 1rem 1rem;
+    background-color: aquamarine;
+}
+.b2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 75%;
+    height: 75%;
+    border-color: red;
+    border-style: double;
+    border-radius: 1rem 1rem;
+    background-color: #a4da89;
+}
+.b3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 75%;
+    height: 75%;
+    border-color: red;
+    border-style: double;
+    border-radius: 1rem 1rem;
+    background-color: yellow;
+}
+
+/* down 7 box */
+
+.redBlock {
+    background-color: red;
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    margin-left: 0px;
+    animation: move 5s;
+    animation-iteration-count: infinite;
+}
+.orangeBlock {
+    background-color: orange;
+    width: 0.85rem;
+    height: 0.85rem;
+    position: absolute;
+    margin-left: 18px;
+    animation: move 4.5s;
+    animation-iteration-count: infinite;
+}
+.yellowBlock {
+    background-color: yellow;
+    width: 0.71rem;
+    height: 0.71rem;
+    position: absolute;
+    margin-left: 34px;
+    animation: move 4s;
+    animation-iteration-count: infinite;
+}
+.greenBlock {
+    position: absolute;
+    background-color: green;
+    width: 0.68rem;
+    height: 0.68rem;
+    margin-left: 48px;
+    animation: move 3.5s;
+    animation-iteration-count: infinite;
+}
+.blueBlock {
+    background-color: blue;
+    width: 0.54rem;
+    height: 0.54rem;
+    position: absolute;
+    margin-left: 61px;
+    animation: move 3s;
+    animation-iteration-count: infinite;
+}
+.cyanBlock {
+    background-color: cyan;
+    width: 0.49rem;
+    height: 0.49rem;
+    position: absolute;
+    margin-left: 72px;
+    animation: move 2.5s;
+    animation-iteration-count: infinite;
+}
+.purpleBlock {
+    background-color: purple;
+    width: 0.41rem;
+    height: 0.41rem;
+    position: absolute;
+    margin-left: 82px;
+    animation: move 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move {
+    from{top:0px}
+    to{top: 90%}
+}

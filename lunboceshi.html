@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <style>
+        .wrap {
+            width: 800px;
+            height: 400px;
+            position: relative;
+        }
+ 
+        .list {
+            width: 800px;
+            height: 400px;
+            position: relative;
+            padding-left: 0px;
+        }
+ 
+        .item {
+            width: 100%;
+            height: 100%;
+            list-style: none;
+            position: absolute;
+            left: 0;
+            opacity: 0;
+            transition: all .8s;
+        }
+ 
+        .item:nth-child(1) {
+            background-color: skyblue;
+        }
+ 
+        .item:nth-child(2) {
+            background-color: yellowgreen;
+        }
+ 
+        .item:nth-child(3) {
+            background-color: rebeccapurple;
+        }
+ 
+        .item:nth-child(4) {
+            background-color: pink;
+        }
+ 
+        .item:nth-child(5) {
+            background-color: orange;
+        }
+ 
+        .item.active {
+            z-index: 10;
+            opacity: 1;
+        }
+ 
+        .btn {
+            width: 60px;
+            height: 100px;
+            z-index: 100;
+            top: 150px;
+            position: absolute;
+        }
+ 
+        #leftBtn {
+            left: 0px;
+        }
+ 
+        #rightBtn {
+            right: 0px;
+        }
+ 
+        .pointList {
+            list-style: none;
+            padding-left: 0px;
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            z-index: 200;
+        }
+ 
+        .point {
+            width: 10px;
+            height: 10px;
+            background-color: antiquewhite;
+            border-radius: 100%;
+            float: left;
+            margin-right: 8px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: slategray;
+            cursor: pointer;  
+        }
+ 
+        .point.active{
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+ 
+<body>
+    <div class="wrap">
+        <ul class="list">
+            <li class="item active">0</li>
+            <li class="item">1</li>
+            <li class="item">2</li>
+            <li class="item">3</li>
+            <li class="item">4</li>
+        </ul>
+        <ul class="pointList">
+            <li class="point active" data-index = 0></li>
+            <li class="point" data-index = 1></li>
+            <li class="point" data-index = 2></li>
+            <li class="point" data-index = 3></li>
+            <li class="point" data-index = 4></li>
+        </ul>
+        <button class="btn" id="leftBtn"> < </button> 
+        <button class="btn" id="rightBtn"> > </button>
+ 
+    </div>
+    <script>
+        var items = document.querySelectorAll(".item");//图片
+        var points = document.querySelectorAll(".point")//点
+        var left = document.getElementById("leftBtn");
+        var right = document.getElementById("rightBtn");
+        var all = document.querySelector(".wrap")
+        var index = 0;
+        var time = 0;//定时器跳转参数初始化
+        
+ 
+        //清除active方法
+        var clearActive = function () {
+            for (i = 0; i < items.length; i++) {
+                items[i].className = 'item';
+            }
+            for (j = 0; j < points.length; j++) {
+                points[j].className = 'point';
+            }
+        }
+ 
+        //改变active方法
+        var goIndex = function () {
+            clearActive();
+            items[index].className = 'item active';
+            points[index].className = 'point active'
+        }
+        //左按钮事件
+        var goLeft = function () {
+            if (index == 0) {
+                index = 4;
+            } else {
+                index--;
+            }
+            goIndex();
+        }
+ 
+        //右按钮事件
+        var goRight = function () {
+            if (index < 4) {
+                index++;
+            } else {
+                index = 0;
+            }
+            goIndex();
+        }
+        
+ 
+        //绑定点击事件监听
+        left.addEventListener('click', function () {
+            goLeft();
+            time = 0;//计时器跳转清零
+        })
+ 
+        right.addEventListener('click', function () {
+            goRight();
+            time = 0;//计时器跳转清零
+        })
+ 
+        for(i = 0;i < points.length;i++){
+            points[i].addEventListener('click',function(){
+                var pointIndex = this.getAttribute('data-index')
+                index = pointIndex;
+                goIndex();
+                time = 0;//计时器跳转清零
+            })
+        }
+        //计时器
+        var timer;
+        function play(){
+         timer = setInterval(() => {
+            time ++;
+            if(time == 20 ){
+                goRight();
+                time = 0;
+            }    
+        },100)
+    }
+        play();
+        //移入清除计时器
+        all.onmousemove = function(){
+            clearInterval(timer)
+        }
+       //移出启动计时器
+        all.onmouseleave = function(){
+            play();
+        }
+    </script>
+</body>
+ 
+</html>

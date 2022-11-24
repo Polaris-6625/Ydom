@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ydom</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="http://43.138.51.229/Ydom.css">
+    </head>
+    <body>
+        <header class="father_auto_xy_center_column">
+            <h1>这是说明文档(一个教程哦!)</h1>
+            <button><a href="./index.html">返回</a></button>
+        </header>
+        <main>
+            <h1>引入到你的项目里去吧!</h1>
+            <code>
+                &lt;link rel="stylesheet" href="http://43.138.51.229/Ydom.css"&gt;
+            </code>
+            <h1><em>注意!!!!</em>下面的引入必须放到代码最底部</h1>
+            <code>
+                &lt;script src="http://43.138.51.229/Ydom.js"&gt;&lt;/script&gt;
+            </code>
+            <h2>标题的Demo</h2>
+            <code>
+                &lt;h1&gt;一级标题&lt;/h1&gt;<br>&lt;h2&gt;二级标题&lt;/h2&gt;<br>&lt;h3&gt;三级标题&lt;/h3&gt;<br>&lt;h4&gt;四级标题&lt;/h4&gt;<br>&lt;h5&gt;五级标题&lt;/h5&gt;<br>&lt;h6&gt;六级标题&lt;/h6&gt;<br>
+            </code>
+            <h1>一级标题</h1>
+            <h2>二级标题</h2>
+            <h3>三级标题</h3>
+            <h4>四级标题</h4>
+            <h5>五级标题</h5>
+            <h6>六级标题</h6>
+            <h2>字体颜色的Demo</h2>
+            <code>
+                &lt;span class="burlywood_font"&gt;肉色文本&lt;/span&gt;
+                <br>
+                &lt;span class="grey_font"&gt;灰色文本&lt;/span&gt;
+                <br>
+                &lt;span class="dark_font"&gt;暗色文本&lt;/span&gt;
+                <br>
+                &lt;span class="black_font"&gt;黑色文本&lt;/span&gt;
+                <br>
+                &lt;span class="red_font"&gt;红色文本&lt;/span&gt;
+                <br>
+                &lt;span class="pink_font"&gt;粉色文本&lt;/span&gt;
+                <br>
+                &lt;span class="purple_font"&gt;紫色文本&lt;/span&gt;
+                <br>
+                &lt;span class="blue_font"&gt;蓝色文本&lt;/span&gt;
+                <br>
+                &lt;span class="cornflowerblue_font"&gt;蓝白文本&lt;/span&gt;
+                <br>
+                &lt;span class="crimson_font"&gt;樱桃色文本&lt;/span&gt;
+                <br>
+                &lt;span class="darkcyan_font"&gt;青色文本&lt;/span&gt;
+                <br>
+                &lt;span class="darkgoldenrod_font"&gt;土黄文本&lt;/span&gt;
+                <br>
+                &lt;span class="cadetblue_font"&gt;浅蓝色文本&lt;/span&gt;
+                <br>
+                &lt;span class="green_font"&gt;绿色文本&lt;/span&gt;
+                <br>
+                &lt;span class="yello_font"&gt;黄色文本&lt;/span&gt;
+                <br>
+                &lt;span class="darkorange_font"&gt;脏橙文本&lt;/span&gt;
+                <br>
+            </code>
+            <div class="com_div">
+                <span class="burlywood_font">肉色文本</span>
+                <span class="grey_font">灰色文本</span>
+                <span class="dark_font">暗色文本</span>
+                <span class="black_font">黑色文本</span>
+                <span class="red_font">红色文本</span>
+                <span class="pink_font">粉色文本</span>
+                <span class="purple_font">紫色文本</span>
+                <span class="blue_font">蓝色文本</span>
+                <span class="cornflowerblue_font">蓝白文本</span>
+                <span class="crimson_font">樱桃色文本</span>
+                <span class="darkcyan_font">青色文本</span>
+                <span class="darkgoldenrod_font">土黄文本</span>
+                <span class="cadetblue_font">浅蓝色文本</span>
+                <span class="green_font">绿色文本</span>
+                <span class="yello_font">黄色文本</span>
+                <span class="darkorange_font">脏橙文本</span>
+            </div>
+
+            <h2>我封装的一些类</h2>
+            <h3>布局方面</h3>
+            <code>
+                这里我封装了father_auto_x_center，father_auto_x_center_column，father_auto_y_center，father_auto_y_center_column，father_auto_xy_center，father_auto_xy_center_column
+                这几个建议用在父级标签。分别是在x / y / xy方向上采用flex的方式进行对齐，然后字体会有一个居中的效果，同时会设置x / y / xy对齐。
+                同时设置了child_1，child_2......child_12可以控制子标签的占比。
+                看下面的Demo
+            </code>
+            <h2>例子在这👇</h2>
+            <div class="father_auto_x_center">
+                <div class="child_1" style="background-color: red;">
+                    child_1
+                </div>
+                <div class="child_2" style="background-color: yellow;">
+                    child_2
+                </div>
+                <div class="child_3" style="background-color: green;">
+                    child_3
+                </div>
+            </div>
+            <h2>输入框和按钮的样式</h2>
+            <code>
+                &lt;input type="text" placeholder="这是个输入框" autocomplete="off"&gt;
+                &lt;input type="button" value="按钮1"&gt;
+                &lt;button&gt;按钮2&lt;/button&gt;
+            </code>
+            <input type="text" placeholder="这是个输入框" autocomplete="off"/>
+            <input type="button" value="按钮1"/>
+            <button>按钮2</button>
+
+            <h2>一个很爽的功能</h2>
+            <code>
+                很多同学可能都被轮播图折磨过，这里我通过对其进行封装，能使开发者便捷的引入轮播图。<br/>
+
+                我们只需要创建一个div，在里面添加id="lunbo"，就可以创造出轮播图。
+                <br/>
+                &lt;div id="lunbo" &gt;&lt;/div&gt;
+            </code>
+            <h2>效果在这👇</h2>
+            <div id="lunbo" ></div>
+
+            <h2>看几个动画8</h2>
+            <code>
+                
+            </code>
+            <h3>动画1👇</h3>
+            <img src="./img/d1.jpg" alt="动画1">
+            <h3>动画2👇</h3>
+            <img src="./img/d2.jpg" alt="动画2">
+        </main>
+    </body>
+    <script src="http://43.138.51.229/Ydom.js"></script>
+</html>
